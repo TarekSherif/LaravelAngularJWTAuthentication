@@ -7,6 +7,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
 import { RequestResetComponent } from './components/password/request-reset/request-reset.component';
 import { ResponseResetComponent } from './components/password/response-reset/response-reset.component';
+import { SingupComponent } from './components/singup/singup.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ResponseResetComponent } from './components/password/response-reset/res
     NavbarComponent,
     LoginComponent,
     RequestResetComponent,
-    ResponseResetComponent
+    ResponseResetComponent,
+    SingupComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
