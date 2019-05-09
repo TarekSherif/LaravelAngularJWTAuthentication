@@ -1,0 +1,27 @@
+composer global require "laravel/installer"
+laravel new backend
+composer require tymon/jwt-auth
+php artisan jwt:secret
+Add the jwt service provider to the providers array in the config/app.php config file
+php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+make User class   implements JWTSubject
+change config/auth.php config file
+'defaults' => ['guard' => 'api',....]
+'api' => ['driver' => 'jwt',...]
+
+First let's add some routes in routes/api.php
+php artisan make:controller AuthController
+
+          
+
+
+npm install -g @angular/cli
+ng new frontend
+npm install bootstrap
+To import bootstrap  "src/styles.css" file   or add  in  angular.json
+ng g c components/navbar
+ng g c components/login
+ng g c components/password/request-reset
+ng g c components/password/response-reset
+
+
